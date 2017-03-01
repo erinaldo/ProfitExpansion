@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Profit_E" targetNamespace="http://tempuri.org/Profit_E.xsd" xmlns:mstns="http://tempuri.org/Profit_E.xsd" xmlns="http://tempuri.org/Profit_E.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Profit_RGConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Profit_RGConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProfitContenedor.Properties.Settings.GlobalReference.Default.Profit_RGConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Profit_E" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Profit_E" msprop:Generator_UserDSName="Profit_E">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="pPedidosAlm" msprop:Generator_TableClassName="pPedidosAlmDataTable" msprop:Generator_TableVarName="tablepPedidosAlm" msprop:Generator_RowChangedName="pPedidosAlmRowChanged" msprop:Generator_TablePropName="pPedidosAlm" msprop:Generator_RowDeletingName="pPedidosAlmRowDeleting" msprop:Generator_RowChangingName="pPedidosAlmRowChanging" msprop:Generator_RowEvHandlerName="pPedidosAlmRowChangeEventHandler" msprop:Generator_RowDeletedName="pPedidosAlmRowDeleted" msprop:Generator_RowClassName="pPedidosAlmRow" msprop:Generator_UserTableName="pPedidosAlm" msprop:Generator_RowEvArgName="pPedidosAlmRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fact_num" msprop:Generator_ColumnVarNameInTable="columnFact_num" msprop:Generator_ColumnPropNameInRow="Fact_num" msprop:Generator_ColumnPropNameInTable="Fact_numColumn" msprop:Generator_UserColumnName="Fact_num" type="xs:int" minOccurs="0" />
+              <xs:element name="Fec_emis" msprop:Generator_ColumnVarNameInTable="columnFec_emis" msprop:Generator_ColumnPropNameInRow="Fec_emis" msprop:Generator_ColumnPropNameInTable="Fec_emisColumn" msprop:Generator_UserColumnName="Fec_emis" type="xs:dateTime" />
+              <xs:element name="Cli_des" msprop:Generator_ColumnVarNameInTable="columnCli_des" msprop:Generator_ColumnPropNameInRow="Cli_des" msprop:Generator_ColumnPropNameInTable="Cli_desColumn" msprop:Generator_UserColumnName="Cli_des" type="xs:string" />
+              <xs:element name="Zon_des" msprop:Generator_ColumnVarNameInTable="columnZon_des" msprop:Generator_ColumnPropNameInRow="Zon_des" msprop:Generator_ColumnPropNameInTable="Zon_desColumn" msprop:Generator_UserColumnName="Zon_des" type="xs:string" />
+              <xs:element name="Empresa" msprop:Generator_ColumnVarNameInTable="columnEmpresa" msprop:Generator_ColumnPropNameInRow="Empresa" msprop:Generator_ColumnPropNameInTable="EmpresaColumn" msprop:Generator_UserColumnName="Empresa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pRengPedAlm" msprop:Generator_TableClassName="pRengPedAlmDataTable" msprop:Generator_TableVarName="tablepRengPedAlm" msprop:Generator_RowChangedName="pRengPedAlmRowChanged" msprop:Generator_TablePropName="pRengPedAlm" msprop:Generator_RowDeletingName="pRengPedAlmRowDeleting" msprop:Generator_RowChangingName="pRengPedAlmRowChanging" msprop:Generator_RowEvHandlerName="pRengPedAlmRowChangeEventHandler" msprop:Generator_RowDeletedName="pRengPedAlmRowDeleted" msprop:Generator_RowClassName="pRengPedAlmRow" msprop:Generator_UserTableName="pRengPedAlm" msprop:Generator_RowEvArgName="pRengPedAlmRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fact_num" msprop:Generator_ColumnVarNameInTable="columnFact_num" msprop:Generator_ColumnPropNameInRow="Fact_num" msprop:Generator_ColumnPropNameInTable="Fact_numColumn" msprop:Generator_UserColumnName="Fact_num" type="xs:int" />
+              <xs:element name="Reng_num" msprop:Generator_ColumnVarNameInTable="columnReng_num" msprop:Generator_ColumnPropNameInRow="Reng_num" msprop:Generator_ColumnPropNameInTable="Reng_numColumn" msprop:Generator_UserColumnName="Reng_num" type="xs:int" />
+              <xs:element name="Co_art" msprop:Generator_ColumnVarNameInTable="columnCo_art" msprop:Generator_ColumnPropNameInRow="Co_art" msprop:Generator_ColumnPropNameInTable="Co_artColumn" msprop:Generator_UserColumnName="Co_art" type="xs:string" />
+              <xs:element name="Art_des" msprop:Generator_ColumnVarNameInTable="columnArt_des" msprop:Generator_ColumnPropNameInRow="Art_des" msprop:Generator_ColumnPropNameInTable="Art_desColumn" msprop:Generator_UserColumnName="Art_des" type="xs:string" />
+              <xs:element name="Total_art" msprop:Generator_ColumnVarNameInTable="columnTotal_art" msprop:Generator_ColumnPropNameInRow="Total_art" msprop:Generator_ColumnPropNameInTable="Total_artColumn" msprop:Generator_UserColumnName="Total_art" type="xs:decimal" />
+              <xs:element name="Ubicacion" msprop:Generator_ColumnVarNameInTable="columnUbicacion" msprop:Generator_ColumnPropNameInRow="Ubicacion" msprop:Generator_ColumnPropNameInTable="UbicacionColumn" msprop:Generator_UserColumnName="Ubicacion" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pPedidosRet" msprop:Generator_TableClassName="pPedidosRetDataTable" msprop:Generator_TableVarName="tablepPedidosRet" msprop:Generator_RowChangedName="pPedidosRetRowChanged" msprop:Generator_TablePropName="pPedidosRet" msprop:Generator_RowDeletingName="pPedidosRetRowDeleting" msprop:Generator_RowChangingName="pPedidosRetRowChanging" msprop:Generator_RowEvHandlerName="pPedidosRetRowChangeEventHandler" msprop:Generator_RowDeletedName="pPedidosRetRowDeleted" msprop:Generator_RowClassName="pPedidosRetRow" msprop:Generator_UserTableName="pPedidosRet" msprop:Generator_RowEvArgName="pPedidosRetRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fact_num" msprop:Generator_ColumnVarNameInTable="columnFact_num" msprop:Generator_ColumnPropNameInRow="Fact_num" msprop:Generator_ColumnPropNameInTable="Fact_numColumn" msprop:Generator_UserColumnName="Fact_num" type="xs:int" />
+              <xs:element name="Fec_emis" msprop:Generator_ColumnVarNameInTable="columnFec_emis" msprop:Generator_ColumnPropNameInRow="Fec_emis" msprop:Generator_ColumnPropNameInTable="Fec_emisColumn" msprop:Generator_UserColumnName="Fec_emis" type="xs:dateTime" />
+              <xs:element name="Cli_des" msprop:Generator_ColumnVarNameInTable="columnCli_des" msprop:Generator_ColumnPropNameInRow="Cli_des" msprop:Generator_ColumnPropNameInTable="Cli_desColumn" msprop:Generator_UserColumnName="Cli_des" type="xs:string" />
+              <xs:element name="Zon_des" msprop:Generator_ColumnVarNameInTable="columnZon_des" msprop:Generator_ColumnPropNameInRow="Zon_des" msprop:Generator_ColumnPropNameInTable="Zon_desColumn" msprop:Generator_UserColumnName="Zon_des" type="xs:string" />
+              <xs:element name="Empresa" msprop:Generator_ColumnVarNameInTable="columnEmpresa" msprop:Generator_ColumnPropNameInRow="Empresa" msprop:Generator_ColumnPropNameInTable="EmpresaColumn" msprop:Generator_UserColumnName="Empresa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pRengPedRet" msprop:Generator_TableClassName="pRengPedRetDataTable" msprop:Generator_TableVarName="tablepRengPedRet" msprop:Generator_RowChangedName="pRengPedRetRowChanged" msprop:Generator_TablePropName="pRengPedRet" msprop:Generator_RowDeletingName="pRengPedRetRowDeleting" msprop:Generator_RowChangingName="pRengPedRetRowChanging" msprop:Generator_RowEvHandlerName="pRengPedRetRowChangeEventHandler" msprop:Generator_RowDeletedName="pRengPedRetRowDeleted" msprop:Generator_RowClassName="pRengPedRetRow" msprop:Generator_UserTableName="pRengPedRet" msprop:Generator_RowEvArgName="pRengPedRetRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fact_num" msprop:Generator_ColumnVarNameInTable="columnFact_num" msprop:Generator_ColumnPropNameInRow="Fact_num" msprop:Generator_ColumnPropNameInTable="Fact_numColumn" msprop:Generator_UserColumnName="Fact_num" type="xs:int" />
+              <xs:element name="Reng_num" msprop:Generator_ColumnVarNameInTable="columnReng_num" msprop:Generator_ColumnPropNameInRow="Reng_num" msprop:Generator_ColumnPropNameInTable="Reng_numColumn" msprop:Generator_UserColumnName="Reng_num" type="xs:int" />
+              <xs:element name="Co_art" msprop:Generator_ColumnVarNameInTable="columnCo_art" msprop:Generator_ColumnPropNameInRow="Co_art" msprop:Generator_ColumnPropNameInTable="Co_artColumn" msprop:Generator_UserColumnName="Co_art" type="xs:string" />
+              <xs:element name="Art_des" msprop:Generator_ColumnVarNameInTable="columnArt_des" msprop:Generator_ColumnPropNameInRow="Art_des" msprop:Generator_ColumnPropNameInTable="Art_desColumn" msprop:Generator_UserColumnName="Art_des" type="xs:string" />
+              <xs:element name="Total_art" msprop:Generator_ColumnVarNameInTable="columnTotal_art" msprop:Generator_ColumnPropNameInRow="Total_art" msprop:Generator_ColumnPropNameInTable="Total_artColumn" msprop:Generator_UserColumnName="Total_art" type="xs:decimal" />
+              <xs:element name="Ubicacion" msprop:Generator_ColumnVarNameInTable="columnUbicacion" msprop:Generator_ColumnPropNameInRow="Ubicacion" msprop:Generator_ColumnPropNameInTable="UbicacionColumn" msprop:Generator_UserColumnName="Ubicacion" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="pPedidosAlm_pRengPedAlm" msdata:parent="pPedidosAlm" msdata:child="pRengPedAlm" msdata:parentkey="Fact_num" msdata:childkey="Fact_num" msprop:Generator_UserChildTable="pRengPedAlm" msprop:Generator_ChildPropName="GetpRengPedAlmRows" msprop:Generator_UserRelationName="pPedidosAlm_pRengPedAlm" msprop:Generator_RelationVarName="relationpPedidosAlm_pRengPedAlm" msprop:Generator_UserParentTable="pPedidosAlm" msprop:Generator_ParentPropName="pPedidosAlmRow" />
+      <msdata:Relationship name="pPedidosRet_pRengPedRet" msdata:parent="pPedidosRet" msdata:child="pRengPedRet" msdata:parentkey="Fact_num" msdata:childkey="Fact_num" msprop:Generator_UserChildTable="pRengPedRet" msprop:Generator_ChildPropName="GetpRengPedRetRows" msprop:Generator_UserRelationName="pPedidosRet_pRengPedRet" msprop:Generator_ParentPropName="pPedidosRetRow" msprop:Generator_RelationVarName="relationpPedidosRet_pRengPedRet" msprop:Generator_UserParentTable="pPedidosRet" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

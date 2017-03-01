@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F28F3DA-9234-48A0-95C0-1567CAE274FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProfitContenedor</RootNamespace>
+    <AssemblyName>Profit Expansion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.1.4\Publicaciones\Profit Expansion\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\192.168.1.4\Publicaciones\Profit Expansion\</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>45</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>P:\profit_a\reporadi\Contenedores\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono-windows.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ProfitContenedor.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C7215612C43D1C894F6C1B048A22D94C3B33F9E4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProfitContenedor_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Business Objects\Common\3.5\managed\dotnet2\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Business Objects\Common\3.5\managed\dotnet2\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Business Objects\Common\3.5\managed\dotnet2\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Business Objects\Common\3.5\managed\dotnet2\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Business Objects\Common\3.5\managed\dotnet2\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Business Objects\Common\3.5\managed\dotnet2\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EdoCta.cs" />
+    <Compile Include="Embarque.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresaCSA.cs" />
+    <Compile Include="FrmArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArt.Designer.cs">
+      <DependentUpon>FrmArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClave.Designer.cs">
+      <DependentUpon>FrmClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPantalla_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPantalla_Stock.Designer.cs">
+      <DependentUpon>FrmPantalla_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCont.Designer.cs">
+      <DependentUpon>FrmCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdoCta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEdoCta.Designer.cs">
+      <DependentUpon>FrmEdoCta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscar.Designer.cs">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmp.Designer.cs">
+      <DependentUpon>FrmEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonitor.Designer.cs">
+      <DependentUpon>FrmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNaviera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNaviera.Designer.cs">
+      <DependentUpon>FrmNaviera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmODC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmODC.Designer.cs">
+      <DependentUpon>FrmODC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRemb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRemb.Designer.cs">
+      <DependentUpon>FrmRemb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gene_claves.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImagenBD.cs" />
+    <Compile Include="MC.cs" />
+    <Compile Include="MonitorCont.cs" />
+    <Compile Include="Naviera.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Odc.cs" />
+    <Compile Include="Pantalla_Stock.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Passwords.cs" />
+    <Compile Include="Pcont.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pcont.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pcont.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pcont.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pcont.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="pEdoCtaxViaje_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pImportarODC_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pImportarODC_Result1.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pMonitorContenedores_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pODCinfo_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pPedidosPendientes_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pRemb_Info_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pSeleccionarAlmacenEmpresa_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarArticulo_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarDocumentosClave_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarEmbarque_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarEmpresasCA_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarEmpresasSA_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarEmpresa_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarGene_Claves_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarNaviera_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarPantalla_Stock_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarProv_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarReng_emb_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarStock_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pSeleccionarUsuario_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pUltimasFacturas_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pUsuariosProfit_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pViajesRelacionados_Result.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reng_emb.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRep.Designer.cs">
+      <DependentUpon>FrmRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RepEmbarques.cs">
+      <DependentUpon>RepEmbarques.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\RepEmbarques.Designer.cs">
+      <DependentUpon>RepEmbarques.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Rodc.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="TablaB.cs" />
+    <Compile Include="Usuario.cs">
+      <DependentUpon>Pcont.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmArt.resx">
+      <DependentUpon>FrmArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClave.resx">
+      <DependentUpon>FrmClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPantalla_Stock.resx">
+      <DependentUpon>FrmPantalla_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCont.resx">
+      <DependentUpon>FrmCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdoCta.resx">
+      <DependentUpon>FrmEdoCta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscar.resx">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmp.resx">
+      <DependentUpon>FrmEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonitor.resx">
+      <DependentUpon>FrmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNaviera.resx">
+      <DependentUpon>FrmNaviera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmODC.resx">
+      <DependentUpon>FrmODC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemb.resx">
+      <DependentUpon>FrmRemb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\FrmRep.resx">
+      <DependentUpon>FrmRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RepEmbarques.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RepEmbarques.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RepEmbarques.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepEmbarques.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Pcont.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Pcont.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="Pcont.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Pcont.edmx</DependentUpon>
+      <LastGenOutput>Pcont.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Pcont.edmx.diagram">
+      <DependentUpon>Pcont.edmx</DependentUpon>
+    </None>
+    <None Include="Pcont.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Pcont.edmx</DependentUpon>
+      <LastGenOutput>Pcont.cs</LastGenOutput>
+    </None>
+    <None Include="ProfitContenedor_ClaveTemporal.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\RepEmbarques.xsc">
+      <DependentUpon>RepEmbarques.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\RepEmbarques.xss">
+      <DependentUpon>RepEmbarques.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Maps-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Blue-Truck.ico" />
+    <Content Include="icono-windows.ico" />
+    <None Include="Resources\Stock.png" />
+    <None Include="Resources\Profit Expansion-01.jpg" />
+    <None Include="Resources\People-64.png" />
+    <None Include="Resources\Company_256.png" />
+    <None Include="Resources\Stargas Shipping Box.png" />
+    <None Include="Resources\Company-Building-256.png" />
+    <None Include="Resources\Stargas Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="BusinessObjects.Enterprise.Sdk">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="BusinessObjects.Licensing.KeycodeDecoder">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Desktop.Report">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevComponents.DotNetBar.SuperGrid">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevComponents.DotNetBar2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevComponents.Instrumentation">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

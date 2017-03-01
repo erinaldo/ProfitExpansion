@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5eb19ac9ec70480ca7fc4dc45767d6f2" Name="Diagram1" ZoomLevel="89">
+        <EntityTypeShape EntityType="Profit_RG.Art_min" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.docum_prov" Width="1.5" PointX="7.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Embarque" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Emp_asoc" Width="1.5" PointX="9.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Empresa" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Excepcion_H" Width="1.5" PointX="11.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Excepcion_P" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Fact_imp" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Fact_imp_reng" Width="1.5" PointX="11" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Gene_claves" Width="1.5" PointX="13.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Ig_pedidos" Width="1.5" PointX="13.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Naviera" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Ord_reng" Width="1.5" PointX="11.125" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Ordene" Width="1.5" PointX="8.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Pantalla_Stock" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Reng_emb" Width="1.5" PointX="2.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RG.Usu_Emp" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="Profit_RG.FK_Embarques_Empresas" ManuallyRouted="false" />
+        <AssociationConnector Association="Profit_RG.FK_Embarques_Naviera" ManuallyRouted="false" />
+        <AssociationConnector Association="Profit_RG.FK_Reng_emb_Embarques" ManuallyRouted="false" />
+        <AssociationConnector Association="Profit_RG.FK_Pantalla_Stock_Empresas" ManuallyRouted="false" />
+        <AssociationConnector Association="Profit_RG.FK_Usu_Emp_Empresas" ManuallyRouted="false" />
+        <AssociationConnector Association="Profit_RG.FK_FacImp_reng_Fact_imp" ManuallyRouted="false" />
+        <AssociationConnector Association="Profit_RG.FK_Ord_reng_Ordenes" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Profit_RG.Pistas_Gen" Width="1.5" PointX="6.375" PointY="15.75" />
+        <EntityTypeShape EntityType="Profit_RG.Valores_prog" Width="1.5" PointX="16.375" PointY="6.75" />
+        <EntityTypeShape EntityType="Profit_RG.Programa" Width="1.5" PointX="15.625" PointY="15.5" />
+        <EntityTypeShape EntityType="Profit_RG.Lim_Credito" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Profit_RG.Precio" Width="1.5" PointX="16.375" PointY="10.75" />
+        <AssociationConnector Association="Profit_RG.FK_Valores_prog_Programas" />
+        <EntityTypeShape EntityType="Profit_RG.Filtro" Width="1.5" PointX="10.625" PointY="16.125" />
+        <EntityTypeShape EntityType="Profit_RG.Reporte" Width="1.5" PointX="8.375" PointY="16" />
+        <AssociationConnector Association="Profit_RG.FK_Filtros_Reportes" />
+        <EntityTypeShape EntityType="Profit_RG.Usu_Prg" Width="1.5" PointX="6" PointY="19" />
+        <EntityTypeShape EntityType="Profit_RG.Autori_Equipo" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Profit_RG.Metas_Vtas" Width="1.5" PointX="18.375" PointY="0.875" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Campos_Logicos" Width="1.5" PointX="10.75" PointY="19.75" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Consultor" Width="1.5" PointX="18.75" PointY="14.875" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Ubicaciones" Width="1.5" PointX="5.375" PointY="0.75" />
+        <AssociationConnector Association="Profit_RG.FK_GIT_Distribucion_GIT_Ubicaciones" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Catalogo_Activo" Width="1.5" PointX="1.5" PointY="16.5" />
+        <EntityTypeShape EntityType="Profit_RG.Usuario" Width="1.5" PointX="3.75" PointY="14.25" />
+        <AssociationConnector Association="Profit_RG.FK_Pantalla_Stock_Usuarios" />
+        <AssociationConnector Association="Profit_RG.FK_Usu_Emp_Usuarios" />
+        <AssociationConnector Association="Profit_RG.FK_Usu_Prg_Usuarios" />
+        <EntityTypeShape EntityType="Profit_RG.Est_diaria" Width="1.5" PointX="20.625" PointY="0.75" />
+        <AssociationConnector Association="Profit_RG.FK_Est_diaria_Est_diaria" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Asign_Equipo" Width="1.5" PointX="18.375" PointY="4.75" />
+        <EntityTypeShape EntityType="Profit_RG.Divisa" Width="1.5" PointX="20.375" PointY="4.75" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Mantenimiento" Width="1.5" PointX="21" PointY="14.5" />
+        <AssociationConnector Association="Profit_RG.FK_GIT_Mantenimiento_GIT_Consultor" />
+        <EntityTypeShape EntityType="Profit_RG.Parametro" Width="1.5" PointX="6.375" PointY="21.75" />
+        <EntityTypeShape EntityType="Profit_RG.Supervisado" Width="1.5" PointX="6" PointY="26.375" />
+        <AssociationConnector Association="Profit_RG.FK_Supervisados_Usuarios" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Mov__E_S" Width="1.5" PointX="18.375" PointY="18.75" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Config_Logica" Width="1.5" PointX="13" PointY="19.625" />
+        <AssociationConnector Association="Profit_RG.FK_GIT_Config_Logica_GIT_Campos_Logicos" />
+        <EntityTypeShape EntityType="Profit_RG.GIT_Activo" Width="1.5" PointX="18.375" PointY="8.75" />
+        <AssociationConnector Association="Profit_RG.FK_GIT_Asign_Equipo_GIT_Consultor" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

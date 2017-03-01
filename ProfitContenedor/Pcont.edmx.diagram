@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3cba5c38bfd94de99d7e80dd8c9a34d2" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="Profit_RGModel.Reng_emb" Width="1.5" PointX="0.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RGModel.Naviera" Width="1.5" PointX="5.375" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RGModel.Embarque" Width="1.5" PointX="3.125" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Profit_RGModel.FK_Embarques_Naviera" />
+        <AssociationConnector Association="Profit_RGModel.FK_Reng_emb_Embarques" />
+        <EntityTypeShape EntityType="Profit_RGModel.Usuario" Width="1.5" PointX="12.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RGModel.Pantalla_Stock" Width="1.5" PointX="9.75" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="Profit_RGModel.FK_Pantalla_Stock_Usuarios" />
+        <EntityTypeShape EntityType="Profit_RGModel.Gene_claves" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Profit_RGModel.Usu_Emp" Width="1.5" PointX="9.625" PointY="0.5" />
+        <AssociationConnector Association="Profit_RGModel.FK_Usu_Emp_Usuarios" />
+        <EntityTypeShape EntityType="Profit_RGModel.Ord_reng" Width="1.5" PointX="7.75" PointY="6.625" />
+        <EntityTypeShape EntityType="Profit_RGModel.Ordene" Width="1.5" PointX="12.375" PointY="6.5" />
+        <AssociationConnector Association="Profit_RGModel.FK_Ord_reng_Ordenes" ManuallyRouted="true" >
+          <ConnectorPoint PointX="13.862953758674628" PointY="6.5000000004522178" />
+          <ConnectorPoint PointX="13.862953758674628" PointY="6.25" />
+          <ConnectorPoint PointX="12.125" PointY="6.25" />
+          <ConnectorPoint PointX="9.25" PointY="8.24466011417864" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Profit_RGModel.Consecutivo" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Profit_RGModel.Empresa" Width="1.5" PointX="7.125" PointY="1" />
+        <AssociationConnector Association="Profit_RGModel.FK_Embarques_Empresas" />
+        <AssociationConnector Association="Profit_RGModel.FK_Pantalla_Stock_Empresas" />
+        <AssociationConnector Association="Profit_RGModel.FK_Usu_Emp_Empresas" />
+        <EntityTypeShape EntityType="Profit_RGModel.Ig_reclamo_ped" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Profit_RGModel.Ig_pedidos" Width="1.5" PointX="3.375" PointY="9.75" />
+        <EntityTypeShape EntityType="Profit_RGModel.Excepcion_H" Width="1.5" PointX="5.375" PointY="10.75" />
+        <EntityTypeShape EntityType="Profit_RGModel.Excepcion_P" Width="1.5" PointX="7.375" PointY="10.75" />
+        <AssociationConnector Association="Profit_RGModel.FK_Ig_reclamo_ped_Ig_reclamo_ped" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

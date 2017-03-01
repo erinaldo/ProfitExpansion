@@ -1,0 +1,70 @@
+﻿Procedimientos generales
+	Navegar: Actua para los botones de navegacion (Primero, Ultimo, Atras, Siguiente), usa como parametros una variable integer e invoca a los 
+			 SP pObtenerTablaInt o pObtenerTablaStr dependiendo de la PK de la tabla en que se desee navegar.
+
+
+Para documentar un documento:
+
+<summary>
+Requerido
+Se utiliza usualmente para describir un objeto. 
+Es la primera línea de las etiquetas de la documentacion. 
+También es utilizado para ayudar al Intellisense cuando se muestra un tooltip sobre un objeto.
+
+<example>
+Opcional
+Se utiliza para describir ejemplos sencillos de la implementación.
+
+<seealso>
+Opcional
+Agrega enlaces asociados al método.
+
+<param>
+Requerido
+Describe un parámetro en un método, también es mostrado en el intellisense.
+
+<typeparam>
+Requerido para cada parámetro de tipo genérico
+Describe un parámetro o método de tipo genérico.
+
+<returns>
+Requerido en cada método que retorna un valor
+Se utiliza para describir el valor a retornar por un método.
+
+<exception>
+Opcional
+Describe una excepción que podría ser lanzada por un método.
+
+<permission>
+Opcional
+Se utiliza para describir el nivel de acceso a un método
+
+<include>
+Opcional
+Utilizado para incluir en la documentación un archivo o parte de otro en el código
+
+<para>
+Opcional
+Utilizado para definir un bloque, solo se utiliza a nivel del elemento de documentación.
+
+<list>
+Opcional
+Crea una lista con uno o diferentes formatos (bullet, number, table) .. se utiliza solamente a nivel del elemento de documentación.
+
+<code>
+Opcional
+Se utiliza para especificar el formato que tendrá el código.
+
+<c>
+Opcional
+Similar al anterior, la unica diferencia es que “code” permite escribir en multiples líneas.
+
+<see>
+Opcional
+Se utiliza para definir un enlace a una página interna (cref) o externa (href).
+
+<paramref>
+Opcional
+Hace referencia a un parámetro dentro de otra etiqueta
+
+<typeparamref>

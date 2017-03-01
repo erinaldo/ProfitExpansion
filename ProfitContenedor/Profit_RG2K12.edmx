@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Profit_RG_2K12Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="pSeleccionarDoc_ODCI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Empresa" Type="nchar" Mode="In" />
+          <Parameter Name="Num_doc" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="Profit_RG_2K12ModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Profit_RG_2K12Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Profit_RG_2K12Entities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="pSeleccionarDoc_ODCI" ReturnType="Collection(Profit_RG_2K12Model.pSeleccionarDoc_ODCI_Result)">
+            <Parameter Name="Empresa" Mode="In" Type="String" />
+            <Parameter Name="Num_doc" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="pSeleccionarDoc_ODCI_Result">
+          <Property Type="String" Name="co_tipo_doc" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="nro_doc" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="nro_fact" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="co_prov" Nullable="false" MaxLength="16" />
+          <Property Type="String" Name="observa" Nullable="true" />
+          <Property Type="DateTime" Name="fec_emis" Nullable="false" Precision="16" />
+          <Property Type="Decimal" Name="total_neto" Nullable="false" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="saldo" Nullable="false" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="Abonos" Nullable="true" Precision="38" Scale="2" />
+          <Property Type="String" Name="prov_des" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cob_num" Nullable="false" MaxLength="20" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Profit_RG_2K12ModelStoreContainer" CdmEntityContainer="Profit_RG_2K12Entities" >
+          <FunctionImportMapping FunctionImportName="pSeleccionarDoc_ODCI" FunctionName="Profit_RG_2K12Model.Store.pSeleccionarDoc_ODCI">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Profit_RG_2K12Model.pSeleccionarDoc_ODCI_Result">
+                <ScalarProperty Name="co_tipo_doc" ColumnName="co_tipo_doc" />
+                <ScalarProperty Name="nro_doc" ColumnName="nro_doc" />
+                <ScalarProperty Name="nro_fact" ColumnName="nro_fact" />
+                <ScalarProperty Name="co_prov" ColumnName="co_prov" />
+                <ScalarProperty Name="observa" ColumnName="observa" />
+                <ScalarProperty Name="fec_emis" ColumnName="fec_emis" />
+                <ScalarProperty Name="total_neto" ColumnName="total_neto" />
+                <ScalarProperty Name="saldo" ColumnName="saldo" />
+                <ScalarProperty Name="Abonos" ColumnName="Abonos" />
+                <ScalarProperty Name="prov_des" ColumnName="prov_des" />
+                <ScalarProperty Name="Cob_num" ColumnName="Cob_num" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
